@@ -19,6 +19,6 @@ Vagrant.configure('2') do |config|
     azure.client_secret = ENV['AZURE_CLIENT_SECRET']
     azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
     azure.location = ENV['AZURE_LOCATION']
-    azure.resource_group_name = ENV['AZURE_RESOURCE_GROUP_NAME']
+    #azure.resource_group_name = ENV['AZURE_RESOURCE_GROUP_NAME']
   end
 end
