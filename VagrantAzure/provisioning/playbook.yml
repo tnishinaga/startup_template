@@ -1,0 +1,12 @@
+
+# update
+- hosts: all
+  tasks:
+    - name: install basic packages
+      apt: name={{ item }} update_cache=yes state=latest
+      with_items:
+        - git
+        - build-essential
+        - emacs-nox
+        - wget
+      become: true
